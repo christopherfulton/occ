@@ -146,6 +146,7 @@
         {# Content #}
         {% block content %}
           <a id="main-content"></a>
+          {{ dump(page.node) }}
           {{ page.content }}
         {% endblock %}
       </section>
