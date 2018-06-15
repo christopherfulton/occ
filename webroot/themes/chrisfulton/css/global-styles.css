@@ -1,0 +1,47 @@
+body {
+	font-family: 'Roboto', sans-serif;
+}
+
+@font-face {
+	font-family: 'BlackJack';
+	src: url('blackjar-webfont.woff') format('woff'),
+		url('blackjar-webfont.woff2') format('woff2'),
+		url('blackjar.ttf') format('truetype');
+}
+
+.navbar-default .navbar-nav li a
+{
+	text-transform: uppercase;
+	font-weight: bold;
+	font-size: 12px;	
+}
+
+@media (min-width: 768px) {
+.navbar-nav > li > a {
+    padding-top: 24px;
+    padding-bottom: 24px;
+}
+}
+
+.container-fluid, .container-fluid div.col-sm-12
+{
+	padding: 0px !important;
+}
+
+.navbar-toggle
+{
+	margin-top: 15px;
+}
+
+.carousel-caption {
+	top:50%;
+	bottom: auto;
+	transform: translateY(-50%);
+	padding-top:0px;
+	padding-bottom: 0px;
+}
+
+.carousel-caption h3
+{
+	font-family: 'BlackJack';
+}
