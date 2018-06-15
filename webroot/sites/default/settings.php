@@ -786,7 +786,7 @@ $settings['entity_update_batch_size'] = 50;
    include $app_root . '/' . $site_path . '/settings.local.php';
  }
 $databases['default']['default'] = array (
-  'database' => 'occ_2018',
+  'database' => 'occ_2018_002',
   'username' => 'root',
   'password' => '',
   'prefix' => '',

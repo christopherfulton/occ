@@ -107,8 +107,7 @@
 
   <div role="main" class="main-container {{ container }} js-quickedit-main-content">
     <div class="row">
-    	
-
+    	{{ dump(breadcrumb) }}
       {# Sidebar First #}
       {% if page.sidebar_first %}
         {% block sidebar_first %}
