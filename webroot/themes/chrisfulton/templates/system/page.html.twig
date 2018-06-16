@@ -92,6 +92,14 @@
   {% endblock %}
 {% endif %}
 
+{% if node.field_cover_image.entity.uri.value %}
+<div class="container-fluid">
+<img src="{{ node.field_cover_image.entity.uri.value | image_style('header_image_for_page') }}" class="img-responsive"/>
+</div>
+{% endif %}
+
+<br/>
+
 {# Main #}
 {% block main %}
   <div class="container-fluid">
@@ -107,7 +115,8 @@
 
   <div role="main" class="main-container {{ container }} js-quickedit-main-content">
     <div class="row">
-    	{{ dump(breadcrumb) }}
+    	
+
       {# Sidebar First #}
       {% if page.sidebar_first %}
         {% block sidebar_first %}
@@ -145,7 +154,6 @@
         {# Content #}
         {% block content %}
           <a id="main-content"></a>
-          {{ dump(page.node) }}
           {{ page.content }}
         {% endblock %}
       </section>
@@ -164,33 +172,6 @@
 
 
 
-    <footer class="footer container-fluid " role="contentinfo">
-    	<div class="row">
-    		<div class="col-sm-4 text-center">
-    			<div class="footer-panel">
-  					<i class="material-icons">phone</i>
-  					<br/>
-  					<h4>01865 297 420</h4>
-  				</div>
-  			</div>
-  			<div class="col-sm-4 text-center">
-    			<div class="footer-panel">
-  					<i class="material-icons">location_on</i>
-  					<br/>
-  					<p>Oxford Community Church</p>
-  					<p class="smalltext">The King's Centre, Osney Mead OX2 0ES</p>
-  					<p class="smalltext"><a href="/directions">Find Us</a></p>
-  				</div>
-  			</div>
-  			<div class="col-sm-4 text-center">
-    			<div class="footer-panel">
-  					<i class="material-icons">email</i>
-  					<br/>
-  					<p><a href="mailto: oxford@occ.org.uk">oxford@occ.org.uk</a></p>
-  				</div>
-  			</div>
-    	</div>
-      {{ page.footer }}
-    </footer>
+    
 
 

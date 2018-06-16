@@ -9,7 +9,7 @@ body {
 		url('blackjar.ttf') format('truetype');
 }
 
-.occ-red
+.occ-red, a
 {
 	color: #ed6267;
 }
@@ -103,4 +103,23 @@ ul.menu--main.nav
 .footer-panel a
 {
 	color: #fff;
+}
+
+.google-maps {
+    position: relative;
+    padding-bottom: 27%; // This is the aspect ratio
+    height: 0;
+    overflow: hidden;
+}
+.google-maps iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100% !important;
+    height: 100% !important;
+}
+
+.field
+{
+	padding-bottom: 2em;
 }
