@@ -123,3 +123,15 @@ ul.menu--main.nav
 {
 	padding-bottom: 2em;
 }
+
+.field--name-field-blog-image
+{
+	float: left;
+	padding-right: 2em;
+	padding-bottom: 2em;
+}
+
+.view-blogroll ul
+{
+	list-style-type: none;
+}
