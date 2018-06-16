@@ -28,6 +28,10 @@
           item.in_active_trail ? 'active',
         ]
       %}
+      {% if menu_level == 1 and item.title == "Who's Who" %}
+      <li class="divider"></li>
+      {% endif %}
+      
       {% if menu_level == 0 and item.is_expanded and item.below %}
         <li{{ item.attributes.addClass(item_classes) }}>
         <a href="{{ item.url }}" class="dropdown-toggle" data-toggle="dropdown">{{ item.title }} <span class="caret"></span></a>

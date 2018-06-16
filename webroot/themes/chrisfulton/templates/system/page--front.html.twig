@@ -131,7 +131,10 @@
   				<i class="material-icons occ-red">date_range</i>
   				<br/>
   				<h4>Events</h4>
-  				<p>Next event info</p>
+  				{% if page.next_event %}
+		  			{{ page.next_event }}
+		  		{% endif %}
+		  		<br/>
   				<a class="btn btn-default" href="/events" role="button">more events</a>
   			</div>
   		</div>
@@ -150,16 +153,23 @@
   				<i class="material-icons occ-red">chat</i>
   				<br/>
   				<h4>Blog</h4>
-  				<p>Latest blog title</p>
+  				{% if page.latest_blog %}
+		  			{{ page.latest_blog }}
+		  		{% endif %}
+		  		<br/>
   				<a class="btn btn-default" href="/blog" role="button">read more</a>
   			</div>
   		</div>
+  		
   		<div class="col-sm-4 text-center">
   			<div class="frontpage-panel">
   				<i class="material-icons occ-red">headset</i>
   				<br/>
   				<h4>Sermons</h4>
-  				<p>Latest sermon title</p>
+  				{% if page.latest_sermon %}
+		  			{{ page.latest_sermon }}
+		  		{% endif %}
+		  		<br/>
   				<a class="btn btn-default" href="/sermons" role="button">more sermons</a>
   			</div>
   		</div>

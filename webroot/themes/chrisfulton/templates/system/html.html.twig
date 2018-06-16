@@ -97,6 +97,12 @@
   				</div>
   			</div>
     	</div>
+    	<div class="row darker-footer">
+    		<div class="col-sm-4 col-sm-offset-4 text-center">
+    			{% if not logged_in %}
+    				&copy; {{ "now"|date("Y") }} Oxford Community Church | <a href="/user/login">Log In</a>
+    			{% endif %}
+    		</div>
     </footer>
     <js-bottom-placeholder token="{{ placeholder_token|raw }}">
   </body>

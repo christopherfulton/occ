@@ -87,7 +87,7 @@
 
 {% if display_submitted %}
       <div{{ author_attributes.addClass('author') }}>
-        {% trans %}By {{ author_name }}{% endtrans %}
+        By {{ content.field_display_author.0 }}
         {{ metadata }}
       </div>
   {% endif %}
@@ -101,7 +101,7 @@
   {% if page %}
     <footer>
       <div{{ author_attributes.addClass('author') }}>
-        {% trans %}By {{ author_name }} on {{ date }}{% endtrans %}
+        {% trans %}On {{ date }}{% endtrans %}
         {{ metadata }}
       </div>
     </footer>
