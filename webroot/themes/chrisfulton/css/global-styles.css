@@ -187,6 +187,12 @@ ul.menu--main.nav
 	font-size: 0.7em;
 }
 
+.footer .row
+{
+	margin-left: 0px;
+	margin-right: 0px;
+}
+
 .darker-footer a
 {
 	color: #555;

@@ -101,8 +101,11 @@
     		<div class="col-sm-4 col-sm-offset-4 text-center">
     			{% if not logged_in %}
     				&copy; {{ "now"|date("Y") }} Oxford Community Church | <a href="/user/login">Log In</a>
+    			{% else %}
+    				&copy; {{ "now"|date("Y") }} Oxford Community Church | <a href="/user/logout">Log Out</a>
     			{% endif %}
     		</div>
+    	</div>
     </footer>
     <js-bottom-placeholder token="{{ placeholder_token|raw }}">
   </body>
