@@ -28,9 +28,10 @@
           item.in_active_trail ? 'active',
         ]
       %}
-      {% if menu_level == 1 and item.title == "Who's Who" %}
+      {% if item.title == "[divider]" %}
       <li class="divider"></li>
-      {% endif %}
+      {% else %}
+      
       
       {% if menu_level == 0 and item.is_expanded and item.below %}
         <li{{ item.attributes.addClass(item_classes) }}>
@@ -43,6 +44,8 @@
         {{ _self.menu_links(item.below, attributes.removeClass(classes), menu_level + 1, classes) }}
       {% endif %}
       </li>
+      
+      {% endif %}
     {% endfor %}
     </ul>
   {% endif %}

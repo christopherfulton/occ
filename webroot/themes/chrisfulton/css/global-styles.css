@@ -197,3 +197,8 @@ ul.menu--main.nav
 {
 	color: #555;
 }
+
+.blog-post.teaser .field.field--name-field-display-author
+{
+	display: none;
+}
