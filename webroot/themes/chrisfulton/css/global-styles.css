@@ -202,3 +202,13 @@ ul.menu--main.nav
 {
 	display: none;
 }
+
+.view-front-page-carousel .carousel.slide
+{
+	background-color: #333;
+}
+
+.view-front-page-carousel .carousel.slide .carousel-inner .item img
+{
+	opacity: 0.75;
+}
