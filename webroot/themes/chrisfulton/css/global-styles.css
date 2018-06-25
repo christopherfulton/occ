@@ -203,12 +203,14 @@ ul.menu--main.nav
 	display: none;
 }
 
-.view-front-page-carousel .carousel.slide
+.view-front-page-carousel .carousel.slide,
+.view-front-page-carousel-mobile .carousel.slide
 {
 	background-color: #333;
 }
 
-.view-front-page-carousel .carousel.slide .carousel-inner .item img
+.view-front-page-carousel .carousel.slide .carousel-inner .item img,
+.view-front-page-carousel-mobile .carousel.slide .carousel-inner .item img
 {
 	opacity: 0.75;
 }
